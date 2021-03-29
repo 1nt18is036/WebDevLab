@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My WebPage</title>
+      
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body > 
+       
+        <div class = "container">
+        
+            <div class = "box" style="background  : tranparent;"> </div>
+                <div class = "box content" style="background : blanchedalmond"> 
+                <h3>NITTE Meenakshi Institute of Technology</h3> 
+            
+            <p id="changeColor" onclick="Function1()" onmouseover="Function2()" onmouseout="Function3()">Student Login</p>
+
+            <script>
+            function Function1() {
+                  document.getElementById("changeColor").style.color = "red";
+              }
+            function Function2() {
+                 document.getElementById("changeColor").style.color = "blue";
+                 document.getElementById("changeColor").style.fontSize="xx-large"
+              }
+              function Function3() {
+                 document.getElementById("changeColor").style.color = "black";
+                 document.getElementById("changeColor").style.fontSize="x-large"
+              }
+            </script>
+            
+            <form >
+                <label for="USN">USN:</label><br>
+                <input type="text" id="usn" value="" ><br><br>
+                <label for="DOB">DOB :</label><br>
+                <input type="date" id="DOB" value="DOB"><br><br>
+                <button id = "login" onclick="Login()">LOGIN</button>
+                <script>
+                    function Login() {
+                       // document.getElementById("login").innerHTML = Login() ;
+                  //     alert("USN field cannot be empty!");
+                        if( document.getElementById("usn").value == "")
+                         {
+                             alert("USN field cannot be empty!");
+                         }
+                         else if(document.getElementById("DOB").value=="DOB")
+                         {
+                            alert("USN field cannot be empty!");
+                         }
+                         else {
+                             window.open("https://nmit.ac.in/");
+                         }
+                    }
+                </script>
+            </form> </div>
+                   
+              
+           
+        </div>
+     
+    </body>
+    </html>

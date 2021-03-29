@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    text-align: center;
+align-self: baseline;
+padding-top: 10%;
+}
+
+  td {
+    font-size: 16.0;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: powderblue;
+    text-align: center;
+    font-size: 16.0;
+
+
+  }
+
+  th {
+    font-size: 16.0;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: rgb(4, 206, 233);
+    text-align: center;
+    font-size: 16.0;
+
+  }
+  body {
+      background-color: sandybrown;
+      text-align: center;
+      font-size: large;
+  }
+  input [type=text]{
+    width: 50%;
+    padding:40px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }

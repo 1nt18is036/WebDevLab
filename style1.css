@@ -1,0 +1,67 @@
+h1 {
+    font-size: xx-large;
+    color: rebeccapurple;
+    background-color: rgb(154, 209, 204);
+    text-align-last: center;
+    height: max-content;
+
+
+}
+h3 {
+   text-align : center;
+   color : Purple;
+   font-size: xx-large;
+}
+p {
+    text-align : center;
+    color : black;
+    font-size: x-large;
+ }
+ 
+
+
+body {
+    background-image: url("NMIT.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+form , label {
+    background-color: bisque;
+    font-size: x-large;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+input {
+    height: 30px;
+}
+input [type = submit]{
+    height: 40px;
+    color: darkorange;
+}
+img {
+    opacity: 1;
+    height: 400px;
+    width: 1350px;
+    color: black;
+}
+.container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 20px;
+   
+  }
+  .box{
+    width: 600%;
+    height: 700%;            
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;  /* for demo purpose  */
+}
+.content{
+    z-index: 9;
+    margin-left: 370px;
+    margin-top: 100px ;
+    text-align: center; /* for demo purpose  */
+}
