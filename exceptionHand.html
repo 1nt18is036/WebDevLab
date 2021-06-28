@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Using value without declaring</h1>
+    <p id="p1"> </p>
+    <h1>syntax error</h1>
+     <p1 id="p2"></p1>
+    <h2>Range error</h2>
+    <input type=number id="num"><br><br>
+    <button id="btn" onclick="f();">click</button><br>
+    <p2 id="p3"></p2>
+    <script>
+    try{
+     a[7]=8
+    }catch(err){
+     document.getElementById("p1").innerHTML=err.name+"<br>"+"using array variable without declaring";
+    }
+    try{
+        eval("alert('Hello)");
+    }catch(err){
+        document.getElementById("p2").innerHTML=err.name;
+    }
+    function check(value){
+       if(value>10)
+       throw new RangeError("the given value is greater than 10");
+       else if(value<0)
+       throw new RangeError("the given value is negative number");
+    }
+    function f(){
+    try{
+        var val=document.getElementById("num").value;
+        check(parseInt(val))
+    }
+    catch(err){
+    document.getElementById("p3").innerHTML=err.name+"<br>"+err.message;
+    }
+   
+}
+    </script>
+</body>
+</html>

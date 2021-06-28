@@ -1,0 +1,59 @@
+  
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Promise</h2>
+<p id="demo"></p>
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+const msg="hello"
+let message=new Promise(function(resolve,react){
+if (msg=="hello"){
+resolve('Success')
+}
+else{
+react('Failure')
+}
+})
+console.log(message)
+message.then((op)=>{
+console.log(op+" then is executed")
+})
+message.catch((op2)=>{
+console.log(op2+ " catch is excecuted")
+})
+
+myPromise.then(
+  function(value) {myDisplayer(value);},
+  function(error) {myDisplayer(error);}
+);
+</script>
+<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+    <table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
+    cellspacing="2">
+    
+    <tr>
+    <td colspan=2>
+    <center><font size=4><b>Student Registration Form</b></font></center>
+    </td>
+    </tr>
+    
+    <tr>
+    <td>Name</td>
+    <td><input type=text name=textnames id="textname" size="30"></td>
+    </tr>
+    <tr>
+        <td>MobileNo</td>
+        <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+        </tr>
+        <tr>
+        <td><input type="reset"></td>
+        <td colspan="2"><input type="submit" value="Submit Form" /></td>
+        </tr>
+        </table>
+        </form>
+</body>
+</html>
