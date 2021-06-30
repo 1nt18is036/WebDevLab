@@ -1,0 +1,49 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>planet</title>
+    <style>
+        .p1{
+            background-color: skyblue;
+            font-size:"15px";
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h style="color:tomato;font-size:20px;">planets:</h>
+    <p id="p" class="p1"></p>
+    <script>
+        function func(name,place,near){
+   this.name=name;
+   this.place=place;
+   this.near=near;
+        }
+        let planet1=new func('mercury',1,'close')
+  let planet2 =new func('venus',2,'close')
+  let planet3 =new func('Earth',3,'close')
+  let planet4=new func('Mars',4,'close')
+  let planet5 =new func('Jupiter',5,'far')
+  let planet6 =new func('Saturn',6,'far')
+  let planet7 =new func('Uranus',7,'far')
+  let  planet8=new func('Neptune',8,'far')
+ let sun=new func('sun')
+  
+      document.getElementById("p").innerHTML="The name of the planet is"+ planet1.name +" of"+ planet1.place +"place and "+planet1.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet2.name +" of  "+ planet2.place +" place and "+planet2.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet3.name +" of "+ planet3.place +" place and "+planet3.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet4.name +" of "+ planet4.place +" place and "+planet4.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet5.name +" of "+ planet5.place +" place and "+planet5.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet6.name +" of "+ planet6.place +" place and "+planet6.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet7.name +" of "+ planet7.place +" place and "+planet7.near+" to/from sun."+"<br>"+
+       "The name of the planet is "+ planet8.name +" of "+ planet8.place +" place and "+planet8.near+" to/from sun."+"<br>"+
+       sun.name+" is at the center of our solar system."
+
+      document.getElementById("p").innerHTML=res;
+    </script>
+</body>
+</html>
